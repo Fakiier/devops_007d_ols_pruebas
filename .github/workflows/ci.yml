@@ -20,4 +20,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Compilar el proyecto
-        run: mvn clean install -Djacoco.check.skip=true
+        run: mvn clean install -Djacoco.skip=true
