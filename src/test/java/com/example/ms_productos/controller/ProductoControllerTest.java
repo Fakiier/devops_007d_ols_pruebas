@@ -1,7 +1,6 @@
 package com.example.ms_productos.controller;
 
 import com.example.ms_productos.dto.ProductoResponseDTO;
-import com.example.ms_productos.security.jwt.JwtService;
 import com.example.ms_productos.service.CustomUserDetailsService;
 import com.example.ms_productos.service.ProductoService;
 import org.junit.jupiter.api.Test;
@@ -27,9 +26,6 @@ class ProductoControllerTest {
 
     @MockitoBean
     private ProductoService productoService;
-
-    @MockitoBean
-    private JwtService jwtService;
 
     @MockitoBean
     private CustomUserDetailsService customUserDetailsService;
