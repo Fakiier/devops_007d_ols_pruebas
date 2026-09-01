@@ -27,8 +27,8 @@ public class Producto {
     @Column(columnDefinition = "TEXT")
     private String descripcion;
 
-    //@Column(nullable = false)
-    //private String imagenUrl;
+    @Column(nullable = false)
+    private String imagenUrl;
 
     private Integer stock;
 }
