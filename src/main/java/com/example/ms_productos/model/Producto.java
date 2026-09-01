@@ -1,6 +1,7 @@
 package com.example.ms_productos.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 @Entity
@@ -22,6 +23,7 @@ public class Producto {
     private String categoria; // "GAME" o "COMIC"
 
     @Column(nullable = false)
+    @Size(min = 0)
     private Double precio;
 
     @Column(columnDefinition = "TEXT")
